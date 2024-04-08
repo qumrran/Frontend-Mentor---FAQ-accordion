@@ -1,0 +1,12 @@
+@import '../variables/reset.scss';
+@import '../variables/variables.scss';
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    &__answer {
+        color: $grayish-purple;
+    }
+}
+
+

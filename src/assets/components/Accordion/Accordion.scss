@@ -1,0 +1,30 @@
+@import '../variables/reset.scss';
+@import '../variables/variables.scss';
+
+.accordion-container {
+	border-bottom: solid $light-pink 2px;
+	&:last-child {
+		border-bottom: none;
+	}
+	.accordion-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.accordion-question {
+			font-weight: bold;
+			color: $dark-purple;
+			padding-right: 1rem;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $active-states;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.accordion-icon-plus,
+	.accordion-icon-minus {
+		cursor: pointer;
+	}
+}

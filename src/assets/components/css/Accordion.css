@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-container {
+  border-bottom: solid hsl(275, 100%, 97%) 2px;
+}
+.accordion-container:last-child {
+  border-bottom: none;
+}
+.accordion-container .accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-container .accordion-title .accordion-question {
+  font-weight: bold;
+  color: hsl(292, 42%, 14%);
+  padding-right: 1rem;
+  transition: color 0.3s ease;
+}
+.accordion-container .accordion-title .accordion-question:hover {
+  color: hsl(281, 83%, 54%);
+  cursor: pointer;
+}
+.accordion-container .accordion-icon-plus,
+.accordion-container .accordion-icon-minus {
+  cursor: pointer;
+}/*# sourceMappingURL=Accordion.css.map */

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background-pattern-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+}
+@media screen and (min-width: 800px) {
+  .App {
+    background-image: url("../images/background-pattern-desktop.svg");
+  }
+}
+.App__FaqContainer {
+  width: clamp(20.4375rem, 50%, 37.5rem);
+  background-color: hsl(0, 0%, 100%);
+  margin: 1.5rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.App__FaqContainer__header {
+  display: flex;
+}
+.App__FaqContainer__header__faqStarImage {
+  padding-right: 1.5rem;
+}/*# sourceMappingURL=App.css.map */
